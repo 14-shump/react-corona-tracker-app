@@ -1,7 +1,7 @@
 import React from 'react'
+import { SelectorType } from '../types'
 
-
-const Selector = ({ setCountry, countriesJson, getCountryData }) => {
+const Selector = ({ setCountry, countriesJson }: SelectorType) => {
   return (
     <div className='selector-container'>
       <select onChange={(e) => setCountry(e.target.value)}>
